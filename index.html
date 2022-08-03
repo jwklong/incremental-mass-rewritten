@@ -51,14 +51,14 @@
 
     <script src="js/main.js"></script>
 
-    <title>Incremental Mass Rewritten</title>
+    <title>incremental sussy baka</title>
 </head>
 <body onload="loadGame()">
     <input id="copy" style="position: absolute; top: 0; left: 0; user-select: all; visibility: hidden;">
     <div id="loading" class='table_center' style="align-items: center; height: 100%;">
         <div>
-            <h1>Loading game...</h1><br>
-            <h2>Loading Offline Progress... (<span id='offlineSpeed'>1</span>x speed)</h2>
+            <h1>loading them tasks</h1><br>
+            <h2>loading nothing (<span id='offlineSpeed'>1</span>+∞x sped)</h2>
         </div>
     </div>
     <div id="notify" class="hide">
@@ -68,33 +68,33 @@
         <div style="height: 365px; overflow-y: auto; margin-bottom: 5px;" id="popup_html">
             Hello, world!
         </div>
-        <button class="btn" id="popup_button" onclick="tmp.popup[0].callFunctions()">Okay</button>
+        <button class="btn" id="popup_button" onclick="tmp.popup[0].callFunctions()">ok and</button>
     </div>
     <div id="supernova_scene" style='display: none'>
         <br>
-        <div id="sns1" style='font-size: 25px;'>You have become SUPERNOVA!</div><br>
-        <div id="sns2" style='font-size: 15px;'>But will reset everything, and gain SUPERNOVA!</div><br>
-        <div id="sns3" style='font-size: 15px;'>You can pass it...</div><br>
-        <div id="sns4" style='font-size: 20px;'>... to discover!</div><br>
-        <button class="btn" id="sns5" onclick="SUPERNOVA.reset()">You'll be Supernova...</button>
+        <div id="sns1" style='font-size: 25px;'>you have become TOO SUSSY!</div><br>
+        <div id="sns2" style='font-size: 15px;'>jk its time to lose everything</div><br>
+        <div id="sns3" style='font-size: 15px;'>you can do a thing</div><br>
+        <div id="sns4" style='font-size: 20px;'>to unsus yourself</div><br>
+        <button class="btn" id="sns5" onclick="SUPERNOVA.reset()">you'll be in a hole</button>
     </div>
     <div id="other_stats">
         
     </div>
     <div id='app_supernova' style='display: none'>
         <div style="position: absolute; top: 25px; left: 25px;">
-            <button class="btn" onclick="tmp.tab = tmp.sn_tab;">Back to Main</button>
-            <button class="btn" onclick="SUPERNOVA.reset(true)">Reset without being Supernova</button>
+            <button class="btn" onclick="tmp.tab = tmp.sn_tab;">back to sussy scren</button>
+            <button class="btn" onclick="SUPERNOVA.reset(true)">reset without dying</button>
         </div>
         <div style="min-height: 70px; margin-top: 15px;">
-            <h2>You become <span id="supernova_rank"></span> <span id="supernova_scale"></span>Supernova</h2><br>
+            <h2>you dont have <span id="supernova_rank"></span> <span id="supernova_scale"></span>soups</h2><br>
             Next Supernova at <span id="supernova_next">X</span> stars
         </div>
         <div style="width: 100%; border-bottom: solid 2px white; height: 5px; margin-bottom: 13px;"></div>
         <div id="sn_stabs" style="min-height: 40px;"></div><br>
         <div id="stab_frame5_0">
             <div style="height: 130px;">
-                You have <span id="neutronStar">X</span> Neutron star.<br>
+                you have <span id="neutronStar">X</span> dead stars<br>
                 <div id="tree_desc" style="margin-top: 3px;">
     
                 </div>
@@ -203,7 +203,7 @@
             <div id="stab_frame0_0">
                 <div id="rank_tabs" class="table_center" style="min-height: 30px;">
                     <div style="width: 145px">
-                        <button onclick="tmp.rank_tab = 0" class="btn_tab">Ranks</button>
+                        <button onclick="tmp.rank_tab = 0" class="btn_tab">renks</button>
                     </div><div style="width: 145px">
                         <button onclick="tmp.rank_tab = 1" class="btn_tab">Prestiges</button>
                     </div>
@@ -220,21 +220,21 @@
                     <div style="width: 400px">
                         <div class="resources">
                             <img src="images/tickspeed.png">
-                            <span style="margin-left: 5px; text-align: left;"><span id="tickspeed_scale"></span>Tickspeeds [<span id="tickspeed_lvl">X</span>]</span>
+                            <span style="margin-left: 5px; text-align: left;"><span id="tickspeed_scale"></span>tickslows [<span id="tickspeed_lvl">X</span>]</span>
                         </div>
                     </div><button id="tickspeed_btn" class="btn" style="width: 200px;" onclick="FORMS.tickspeed.buy()">Cost: <span id="tickspeed_cost">X</span> Rage Points</button>
                     <button class="btn" style="width: 120px;" onclick="FORMS.tickspeed.buyMax()">Buy Max</button>
                     <button id="tickspeed_auto" class="btn" style="width: 80px;" onclick="FORMS.tickspeed.autoSwitch()">OFF</button>
                     <div style="margin-left: 5px; text-align: left; width: 400px">
-                        Tickspeed Power: <span id="tickspeed_step">X</span><br>
-                        Tickspeed Effect: <span id="tickspeed_eff">X</span>x to mass gain
+                        tickslow powr: <span id="tickspeed_step">X</span><br>
+                        tickslow E: <span id="tickspeed_eff">X</span>x to mass gain
                     </div>
                 </div><br><div>
-                    <span id="massSoft1" class="red">After <b id="massSoftStart1">X</b> of mass gain will softcap mass gain!</span><br>
-                    <span id="massSoft3" style="color: rgb(121, 0, 0)">After <b id="massSoftStart3">X</b> of mass gain will softcap^2 mass gain!</span><br>
-                    <span id="massSoft4" style="color: rgb(122, 0, 86)">After <b id="massSoftStart4">X</b> of mass gain will softcap^3 mass gain!</span><br>
-                    <span id="massSoft5" style="color: rgb(255, 94, 0)">After <b id="massSoftStart5">X</b> of mass gain will softcap^4 mass gain!</span><br>
-                    <span id="massSoft6" style="color: rgb(255, 238, 0)">After <b id="massSoftStart6">X</b> of mass gain will softcap^5 mass gain!</span>
+                    <span id="massSoft1" class="red">After <b id="massSoftStart1">X</b> of mass gain will ruin your life!</span><br>
+                    <span id="massSoft3" style="color: rgb(121, 0, 0)">After <b id="massSoftStart3">X</b> of mass gain will ruin your life again!</span><br>
+                    <span id="massSoft4" style="color: rgb(122, 0, 86)">After <b id="massSoftStart4">X</b> of mass gain will still ruin your life!</span><br>
+                    <span id="massSoft5" style="color: rgb(255, 94, 0)">After <b id="massSoftStart5">X</b> of mass gain will ruin your life: eletric boogaloo!</span><br>
+                    <span id="massSoft6" style="color: rgb(255, 238, 0)">After <b id="massSoftStart6">X</b> of mass gain will not stop ruining you ligr!</span>
                 </div>
             </div><div id="stab_frame0_1">
                 You have <span id="bhMass2">X</span> of Black Hole<br>
