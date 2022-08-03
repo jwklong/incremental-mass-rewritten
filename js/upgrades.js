@@ -61,7 +61,7 @@ const UPGS = {
         },
         1: {
             unl() { return player.ranks.rank.gte(1) || player.mainUpg.atom.includes(1) },
-            title: "Muscler",
+            title: "muscly",
             start: E(10),
             inc: E(1.5),
             effect(x) {
@@ -87,7 +87,7 @@ const UPGS = {
         },
         2: {
             unl() { return player.ranks.rank.gte(2) || player.mainUpg.atom.includes(1) },
-            title: "Booster",
+            title: "boots",
             start: E(100),
             inc: E(4),
             effect(x) {
@@ -100,7 +100,7 @@ const UPGS = {
             effDesc(eff) {
                 return {
                     step: "+"+format(eff.step)+"x",
-                    eff: "x"+format(eff.eff)+" to Muscler Power"
+                    eff: "x"+format(eff.eff)+" to muscly powr"
                 }
             },
             bonus() {
@@ -113,7 +113,7 @@ const UPGS = {
         },
         3: {
             unl() { return player.ranks.rank.gte(3) || player.mainUpg.atom.includes(1) },
-            title: "Stronger",
+            title: "strongth",
             start: E(1000),
             inc: E(9),
             effect(x) {
@@ -144,7 +144,7 @@ const UPGS = {
             effDesc(eff) {
                 return {
                     step: "+^"+format(eff.step),
-                    eff: "^"+format(eff.eff)+" to Booster Power"+(eff.eff.gte(eff.ss)?` <span class='soft'>(softcapped${eff.eff.gte(1.8e5)?eff.eff.gte(5e15)&&!player.ranks.pent.gte(15)?"^3":"^2":""})</span>`:"")
+                    eff: "^"+format(eff.eff)+" to boots powr"+(eff.eff.gte(eff.ss)?` <span class='soft'>(softcapped${eff.eff.gte(1.8e5)?eff.eff.gte(5e15)&&!player.ranks.pent.gte(15)?"^3":"^2":""})</span>`:"")
                 }
             },
             bonus() {
