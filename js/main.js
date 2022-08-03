@@ -449,26 +449,26 @@ function format(ex, acc=4, max=12, type=player.options.notation) {
 
 function turnOffline() { player.offline.active = !player.offline.active }
 
-const ARV = ['mlt','mgv','giv','tev','pev','exv','zev','yov']
+const ARV = ['dos','tres','cuatro','cinco','seis','siete','ocho','nueve']
 
 function formatARV(ex,gain=false) {
     if (gain) ex = uni("ee9").pow(ex)
     let mlt = ex.div(1.5e56).log10().div(1e9)
     let arv = mlt.log10().div(15).floor()
-    return format(mlt.div(Decimal.pow(1e15,arv))) + " " + (arv.gte(8)?"arv^"+format(arv.add(2),0):ARV[arv.toNumber()])
+    return format(mlt.div(Decimal.pow(1e15,arv))) + " " + (arv.gte(8)?"diez^"+format(arv.add(2),0):ARV[arv.toNumber()])
 }
 
 function formatMass(ex) {
     ex = E(ex)
     if (ex.gte(E(1.5e56).mul('ee9'))) return formatARV(ex)
-    if (ex.gte(1.5e56)) return format(ex.div(1.5e56)) + ' uni'
-    if (ex.gte(2.9835e45)) return format(ex.div(2.9835e45)) + ' MMWG'
-    if (ex.gte(1.989e33)) return format(ex.div(1.989e33)) + ' M☉'
-    if (ex.gte(5.972e27)) return format(ex.div(5.972e27)) + ' M⊕'
-    if (ex.gte(1.619e20)) return format(ex.div(1.619e20)) + ' MME'
-    if (ex.gte(1e6)) return format(ex.div(1e6)) + ' tonne'
-    if (ex.gte(1e3)) return format(ex.div(1e3)) + ' kg'
-    return format(ex) + ' g'
+    if (ex.gte(1.5e56)) return format(ex.div(1.5e56)) + ' uno'
+    if (ex.gte(2.9835e45)) return format(ex.div(2.9835e45)) + ' mewg'
+    if (ex.gte(1.989e33)) return format(ex.div(1.989e33)) + ' M☉H'
+    if (ex.gte(5.972e27)) return format(ex.div(5.972e27)) + ' M⊕H'
+    if (ex.gte(1.619e20)) return format(ex.div(1.619e20)) + ' MEH'
+    if (ex.gte(1e6)) return format(ex.div(1e6)) + ' tones'
+    if (ex.gte(1e3)) return format(ex.div(1e3)) + ' kilobytes'
+    return format(ex) + ' gamers'
 }
 
 function formatGain(amt, gain, isMass=false) {
