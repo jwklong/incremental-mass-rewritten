@@ -195,8 +195,19 @@ function getScalingName(name, x=0, y=0) {
 	let current = "";
 	let amt = SCALING_RES[name](x,y);
 	for (let n = cap - 1; n >= 0; n--) {
-		if (scalingActive(name, amt, Object.keys(SCALE_START)[n]))
-			return capitalFirst(Object.keys(SCALE_START)[n]) + (n==3?"-":" ");
+		if (scalingActive(name, amt, Object.keys(SCALE_START)[n])) {
+			let actualText = capitalFirst(Object.keys(SCALE_START)[n]) + (n==3?"-":" ");
+			switch (actualText) {
+				case "Super":
+					return FULL_SCALE_NAME[0]
+				case "Hyper":
+					return FULL_SCALE_NAME[1]
+				case "Ultra":
+					return FULL_SCALE_NAME[2]
+				case "Meta":
+					return FULL_SCALE_NAME[3]
+			}
+		}
 	}
 	return current;
 }
