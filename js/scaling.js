@@ -101,7 +101,7 @@ const SCALE_FP = {
 const QCM8_SCALES = ['rank','tier','tetr','pent','massUpg','tickspeed','bh_condenser','gamma_ray','supernova','fTier']
 const PreQ_SCALES = ['rank','tier','tetr','massUpg','tickspeed','bh_condenser','gamma_ray']
 const SCALE_TYPE = ['super', 'hyper', 'ultra', 'meta'] // super, hyper, ultra, meta
-const FULL_SCALE_NAME = ['Super', 'Hyper', 'Ultra', 'Meta']
+const FULL_SCALE_NAME = ['souper', 'HYPEEEE', 'Ultimate Fortnite Tycoon Obby', 'met       a']
 
 const SCALING_RES = {
     rank(x=0) { return player.ranks.rank },
