@@ -1,6 +1,6 @@
 const RANKS = {
     names: ['rank', 'tier', 'tetr', 'pent'],
-    fullNames: ['Rank', 'Tier', 'Tetr', 'Pent'],
+    fullNames: ['renk', 'tyres', 'tet', 'pen'],
     reset(type) {
         if (tmp.ranks[type].can) {
             player.ranks[type] = player.ranks[type].add(1)
@@ -57,15 +57,15 @@ const RANKS = {
     },
     desc: {
         rank: {
-            '1': "unlock mass upgrade 1.",
-            '2': "unlock mass upgrade 2, reduce mass upgrade 1 cost scaled by 20%.",
-            '3': "unlock mass upgrade 3, reduce mass upgrade 2 cost scaled by 20%, mass upgrade 1 boosts itself.",
-            '4': "reduce mass upgrade 3 cost scale by 20%.",
-            '5': "mass upgrade 2 boosts itself.",
-            '6': "make mass gain is boosted by (x+1)^2, where x is rank.",
+            '1': "unlock them muscles.",
+            '2': "unlock some nice boots and reduce price of your muscles by 20%.",
+            '3': "unlock memes, reduce price of your boots by 20% and muscle can kick itself.",
+            '4': "reduce price of your strongth by 20%.",
+            '5': "boots do some kicking.",
+            '6': "get mass gain to follow the rule of (renk+1)^2",
             '13': "triple mass gain.",
-            '14': "double Rage Powers gain.",
-            '17': "make rank 6 reward effect is better. [(x+1)^2 -> (x+1)^x^1/3]",
+            '14': "double anger gain.",
+            '17': "get mass gain to follow a different rule. [(renk+1)^2 -> (renk+1)^renk^1/3]",
             '34': "make mass upgrade 3 softcap start 1.2x later.",
             '40': "adds tickspeed power based on ranks.",
             '45': "ranks boosts Rage Powers gain.",
@@ -78,8 +78,8 @@ const RANKS = {
         },
         tier: {
             '1': "reduce rank reqirements by 20%.",
-            '2': "raise mass gain by 1.15",
-            '3': "reduce all mass upgrades cost scale by 20%.",
+            '2': "raise the roof of mass's house by 1.15",
+            '3': "reduce the price of everything except living by 20%.",
             '4': "adds +5% tickspeed power for every tier you have, softcaps at +40%.",
             '6': "make rage powers boosted by tiers.",
             '8': "make tier 6's reward effect stronger by dark matters.",
