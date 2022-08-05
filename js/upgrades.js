@@ -169,8 +169,8 @@ const UPGS = {
         over(x,y) { player.main_upg_msg = [x,y] },
         reset() { player.main_upg_msg = [0,0] },
         1: {
-            title: "Rage Upgrades",
-            res: "Rage Power",
+            title: "anger management",
+            res: "angers",
             getRes() { return player.rp.points },
             unl() { return player.rp.unl },
             can(x) { return player.rp.points.gte(this[x].cost) && !player.mainUpg.rp.includes(x) },
@@ -183,7 +183,7 @@ const UPGS = {
             auto_unl() { return player.mainUpg.bh.includes(5) },
             lens: 15,
             1: {
-                desc: "Boosters adds Musclers.",
+                desc: "boots give you muscles because science",
                 cost: E(1),
                 effect() {
                     let ret = E(player.massUpg[2]||0)
@@ -194,7 +194,7 @@ const UPGS = {
                 },
             },
             2: {
-                desc: "Strongers adds Boosters.",
+                desc: "strongths give you boots because minecraft trading",
                 cost: E(10),
                 effect() {
                     let ret = E(player.massUpg[3]||0)
@@ -205,7 +205,7 @@ const UPGS = {
                 },
             },
             3: {
-                desc: "You can automatically buys mass upgrades.",
+                desc: "mass upgrades no longer need humans.",
                 cost: E(25),
             },
             4: {
