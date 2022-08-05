@@ -64,7 +64,7 @@ function setupHTML() {
 					<img src="images/mass_upg${x}.png">
 					<span style="margin-left: 5px; text-align: left;"><span id="massUpg_scale_${x}"></span>${upg.title} [<span id="massUpg_lvl_${x}">X</span>]</span>
 				</div>
-			</div><button id="massUpg_btn_${x}" class="btn" style="width: 200px;" onclick="UPGS.mass.buy(${x}, true)">Cost: <span id="massUpg_cost_${x}">X</span></button>
+			</div><button id="massUpg_btn_${x}" class="btn" style="width: 200px;" onclick="UPGS.mass.buy(${x}, true)">cost: <span id="massUpg_cost_${x}">X</span></button>
 			<button class="btn" style="width: 120px;" onclick="UPGS.mass.buyMax(${x})">cheat</button>
 			<button id="massUpg_auto_${x}" class="btn" style="width: 80px;" onclick="UPGS.mass.autoSwitch(${x})">OFF</button>
 			<div style="margin-left: 5px; text-align: left; width: 400px">
@@ -301,7 +301,7 @@ function updateMainUpgradesHTML() {
 	if (player.main_upg_msg[0] != 0) {
 		let upg1 = UPGS.main[player.main_upg_msg[0]]
 		let upg2 = UPGS.main[player.main_upg_msg[0]][player.main_upg_msg[1]]
-		let msg = "<span class='sky'>"+(typeof upg2.desc == "function" ? upg2.desc() : upg2.desc)+"</span><br><span>Cost: "+format(upg2.cost,0)+" "+upg1.res+"</span>"
+		let msg = "<span class='sky'>"+(typeof upg2.desc == "function" ? upg2.desc() : upg2.desc)+"</span><br><span>cost: "+format(upg2.cost,0)+" "+upg1.res+"</span>"
 		if (upg2.effDesc !== undefined) msg += "<br><span class='green'>Currently: "+tmp.upgs.main[player.main_upg_msg[0]][player.main_upg_msg[1]].effDesc+"</span>"
 		tmp.el.main_upg_msg.setHTML(msg)
 	} else tmp.el.main_upg_msg.setTxt("")
