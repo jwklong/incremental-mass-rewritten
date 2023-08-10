@@ -83,6 +83,8 @@ function calcOverflow(x,y,s,height=1) { return x.gte(s) ? x.max(1).iteratedlog(1
 String.prototype.corrupt = function (active=true) { return active ? this.strike() + ` <span class='corrupted_text'>[Corrupted]</span>` : this }
 
 function calc(dt) {
+    dt *= 2
+    
     let du_gs = tmp.preQUGlobalSpeed.mul(dt)
     let inf_gs = tmp.preInfGlobalSpeed.mul(dt)
 
